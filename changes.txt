@@ -1,0 +1,4 @@
+please follow the above instruction.
+open phpmyadmin, click on school,then click settings then click on SQL at the top bar and paste the following code  and hit go
+
+ALTER TABLE `settings` ADD `cDate` VARCHAR(10) NOT NULL DEFAULT '2020-05-07' AFTER `dWatermark`;

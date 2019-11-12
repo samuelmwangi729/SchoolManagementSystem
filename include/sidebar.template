@@ -1,0 +1,628 @@
+<div class="left_col scroll-view">
+
+                        <div class="clearfix"></div>
+
+                        <!-- menu profile quick info -->
+                        <div class="profile clearfix">
+                                                        <div class="profile_pic">
+                                <div style="background-image: url('http://localhost/projects/future/uploads/admin_image/3.jpg')" alt="..." class="img-circle profile_img"></div>
+                            </div>
+                            <div class="profile_info">
+                                <span>admin</span>
+                                <h2>
+                                    Admininstrator                                </h2>
+                            </div>
+                        </div>
+
+                        <br>
+
+<div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+    <div class="menu_section">
+
+        <ul id="main-menu" class="nav side-menu" style="">
+            <!-- DASHBOARD -->
+            <li class="active  root-level">
+                <a href="http://localhost/projects/future/index.php?admin/dashboard">
+                    <i class="entypo-gauge"></i>
+                    <span>dashboard</span>
+                </a>
+            </li>
+
+            <!-- SESSION -->
+            <li class="root-level">
+                <a href="http://localhost/projects/future/index.php?admin/session">
+                    <i class="fa fa-gear"></i>
+                    <span>Manage Session</span>
+                </a>
+            </li>
+
+            <!-- STUDENT -->
+            <li class="root-level has-sub">
+                <a href="#">
+                    <i class="entypo-users"></i>
+                    <span>Students</span><span class="fa fa-chevron-down"></span>
+                </a>
+                <ul class="nav child_menu">
+                    <!-- STUDENT ADMISSION -->
+                    <li class=" ">
+                        <a href="http://localhost/projects/future/index.php?admin/student_add">
+                            <span> Admit Student</span>
+                        </a>
+                    </li>
+
+                    <!-- STUDENT BULK ADMISSION -->
+                    <li class=" ">
+                        <a href="http://localhost/projects/future/index.php?admin/student_bulk_add">
+                            <span> Admit Bulk Student</span>
+                        </a>
+                    </li>
+
+                    <!-- STUDENT INFORMATION -->
+                    <li class="has-sub">
+                        <a href="#">
+                            <span> Student Information</span><span class="fa fa-chevron-down"></span>
+                        </a>
+                        <ul class="nav child_menu">
+                                                            <li class="">
+                                    <a href="http://localhost/projects/future/index.php?admin/student_information/2">
+                                        <span>class KG</span>
+                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="http://localhost/projects/future/index.php?admin/student_information/3">
+                                        <span>class Primary One</span>
+                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="http://localhost/projects/future/index.php?admin/student_information/4">
+                                        <span>class PRIMARY THREE</span>
+                                    </a>
+                                </li>
+                                                    </ul>
+                    </li>
+
+ 				<!-- STUDENT PROMOTION -->
+                <li class=" ">
+                    <a href="http://localhost/projects/future/index.php?admin/student_promotion">
+                        <span>Student Promotion</span>
+                    </a>
+                </li>
+
+
+                </ul>
+            </li>
+
+            <!-- ENQUIRY TABLE INFO -->
+            <li class="root-level">
+                <a href="http://localhost/projects/future/index.php?admin/academic_syllabus">
+                    <i class="entypo-book"></i>
+                    <span>Academic Syllabus</span>
+                </a>
+            </li>
+
+            <!-- TEACHER -->
+            <li class="root-level">
+                <a href="http://localhost/projects/future/index.php?admin/teacher">
+                    <i class="entypo-users"></i>
+                    <span>Teachers</span>
+                </a>
+            </li>
+
+            <!-- PARENTS -->
+            <li class="root-level">
+                <a href="http://localhost/projects/future/index.php?admin/parent">
+                    <i class="entypo-users"></i>
+                    <span>Parents</span>
+                </a>
+            </li>
+
+            <!-- LIBRARIAN -->
+            <li class="root-level">
+                <a href="http://localhost/projects/future/index.php?admin/librarian">
+                    <i class="entypo-users"></i>
+                    <span>Librarians</span>
+                </a>
+            </li>
+
+            <!-- LIBRARIAN -->
+            <li class="root-level">
+                <a href="http://localhost/projects/future/index.php?admin/alumni">
+                    <i class="entypo-users"></i>
+                    <span>Manage Alumni</span>
+                </a>
+            </li>
+
+            <!-- MEDIA -->
+            <li class="root-level">
+                <a href="http://localhost/projects/future/index.php?admin/media">
+                    <i class="entypo-target"></i>
+                    <span>Manage Media</span>
+                </a>
+            </li>
+
+            <!-- ENQUIRY TABLE INFO -->
+            <li class="root-level">
+                <a href="http://localhost/projects/future/index.php?admin/enquiry">
+                    <i class="entypo-book"></i>
+                    <span>All Enquiries</span>
+                </a>
+            </li>
+
+            <!-- LOAN PAGE -->
+            <li class="root-level has-sub">
+                <a href="#">
+                    <i class="entypo-flow-tree"></i>
+                    <span>Manage Loan</span><span class="fa fa-chevron-down"></span>
+                </a>
+                <ul class="nav child_menu">
+                    <li class=" ">
+                        <a href="http://localhost/projects/future/index.php?admin/loan_applicant">
+                            <span> Manage Loan Applicants</span>
+                        </a>
+                    </li>
+                    <li class=" ">
+                        <a href="http://localhost/projects/future/index.php?admin/loan_approval">
+                            <span> Manage Loan Approvals</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+
+            <!-- ENQUIRY TABLE INFO -->
+            <li class="root-level">
+                <a href="http://localhost/projects/future/index.php?admin/enquiry_setting">
+                    <i class="fa fa-gear"></i>
+                    <span>Enquiry Category</span>
+                </a>
+            </li>
+
+            <!-- ACCOUNTANT -->
+            <li class="root-level">
+                <a href="http://localhost/projects/future/index.php?admin/accountant">
+                    <i class="entypo-users"></i>
+                    <span>Accountants</span>
+                </a>
+            </li>
+
+            <!-- HOSTEL MANAGER -->
+            <li class="root-level">
+                <a href="http://localhost/projects/future/index.php?admin/hostel">
+                    <i class="entypo-users"></i>
+                    <span>Hostel Manager</span>
+                </a>
+            </li>
+
+
+
+
+			<li class="root-level has-sub">
+            <a href="#">
+                <i class="entypo-book"></i>
+                <span>Generate ID Cards</span><span class="fa fa-chevron-down"></span>
+            </a>
+            <ul class="nav child_menu">
+                <li class=" ">
+                    <a href="http://localhost/projects/future/index.php?admin/teacher_id_card">
+                        <span><i class="entypo-dot"></i> Teacher ID Card</span>
+                    </a>
+                </li>
+
+				<li class=" ">
+                    <a href="http://localhost/projects/future/index.php?admin/id_card">
+                        <span><i class="entypo-dot"></i> Student ID Card</span>
+                    </a>
+                </li>
+                <li class=" ">
+                    <a href="http://localhost/projects/future/index.php?admin/hostel_id_card">
+                        <span><i class="entypo-dot"></i> Hostel ID Card</span>
+                    </a>
+                </li>
+				<li class=" ">
+                    <a href="http://localhost/projects/future/index.php?admin/accountant_id_card">
+                        <span><i class="entypo-dot"></i> Accountant ID Card</span>
+                    </a>
+                </li>
+				<li class=" ">
+                    <a href="http://localhost/projects/future/index.php?admin/librarian_id_card">
+                        <span><i class="entypo-dot"></i> Librarian ID Card</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+            <!-- CLASS -->
+            <li class="root-level has-sub">
+                <a href="#">
+                    <i class="entypo-flow-tree"></i>
+                    <span>class</span><span class="fa fa-chevron-down"></span>
+                </a>
+                <ul class="nav child_menu">
+                    <li class=" ">
+                        <a href="http://localhost/projects/future/index.php?admin/classes">
+                            <span> Manage Classes</span>
+                        </a>
+                    </li>
+                    <li class=" ">
+                        <a href="http://localhost/projects/future/index.php?admin/section">
+                            <span> Manage Sections</span>
+                        </a>
+                    </li>
+                    <li class=" ">
+                        <a href="http://localhost/projects/future/index.php?admin/academic_syllabus">
+                            <span> Academic Syllabus</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- SUBJECT -->
+            <li class="root-level has-sub">
+                <a href="#">
+                    <i class="entypo-docs"></i>
+                    <span>Subjects</span><span class="fa fa-chevron-down"></span>
+                </a>
+                <ul class="nav child_menu">
+                                            <li class="">
+                            <a href="http://localhost/projects/future/index.php?admin/subject/2">
+                                <span>Classs KG</span>
+                            </a>
+                        </li>
+                                            <li class="">
+                            <a href="http://localhost/projects/future/index.php?admin/subject/3">
+                                <span>Classs Primary One</span>
+                            </a>
+                        </li>
+                                            <li class="">
+                            <a href="http://localhost/projects/future/index.php?admin/subject/4">
+                                <span>Classs PRIMARY THREE</span>
+                            </a>
+                        </li>
+                                    </ul>
+            </li>
+
+            <!-- CLASS ROUTINE -->
+            <li class="root-level">
+                <a href="http://localhost/projects/future/index.php?admin/class_routine">
+                    <i class="entypo-target"></i>
+                    <span>Class Routines</span>
+                </a>
+            </li>
+
+            <!-- CLUB -->
+            <li class="root-level">
+                <a href="http://localhost/projects/future/index.php?admin/club">
+                    <i class="fa fa-book"></i>
+                    <span>School Clubs</span>
+                </a>
+            </li>
+
+            <!-- CIRCULAR MANAGER -->
+            <li class="root-level">
+                <a href="http://localhost/projects/future/index.php?admin/circular">
+                    <span><i class="entypo-book"></i> Manage Circular</span>
+                </a>
+            </li>
+
+            <!-- TASK MANAGER -->
+            <li class="root-level">
+                <a href="http://localhost/projects/future/index.php?admin/task_manager">
+                    <span><i class="entypo-book"></i> Task Manager</span>
+                </a>
+            </li>
+
+            <!-- STUDY MATERIALS -->
+            <li class="root-level">
+                <a href="http://localhost/projects/future/index.php?admin/study_material">
+                    <i class="entypo-target"></i>
+                    <span>Study Materials</span>
+                </a>
+            </li>
+
+
+
+            <!-- DAILY ATTENDANCE -->
+            <li class="root-level has-sub">
+                <a href="#">
+                    <i class="entypo-chart-area"></i>
+                    <span>Daily Attendance</span><span class="fa fa-chevron-down"></span>
+                </a>
+                <ul class="nav child_menu">
+                    <li class=" ">
+                        <a href="http://localhost/projects/future/index.php?admin/manage_attendance/22/08/2019">
+                            <span> Daily Attendance</span>
+                        </a>
+                    </li>
+                    <li class=" ">
+                        <a href="http://localhost/projects/future/index.php?admin/attendance_report">
+                            <span> Attendance Report</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- DAILY ATTENDANCE
+            <li class=" ">
+                <a href="http://localhost/projects/future/index.php?admin/manage_attendance/22/08/2019">
+                    <i class="entypo-chart-area"></i>
+                    <span>Daily Attendances</span>
+                </a>
+
+            </li> -->
+
+
+
+            <!-- EXAMS -->
+            <li class="root-level has-sub">
+                <a href="#">
+                    <i class="entypo-graduation-cap"></i>
+                    <span>Manage CBT</span><span class="fa fa-chevron-down"></span>
+                </a>
+                <ul class="nav child_menu">
+
+                    <li class=" ">
+                        <a href="http://localhost/projects/future/index.php?admin/exam_add">
+                            <span> Add Exams</span>
+                        </a>
+                    </li>
+
+                    <li class=" ">
+                        <a href="http://localhost/projects/future/index.php?admin/exam_list">
+                            <span> List Exams</span>
+                        </a>
+                    </li>
+
+                    <li class=" ">
+                        <a href="http://localhost/projects/future/index.php?admin/exam_result_list">
+                            <span> View Result</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+
+
+            <!-- EXAMS -->
+            <li class="root-level has-sub">
+                <a href="#">
+                    <i class="entypo-graduation-cap"></i>
+                    <span>Exams</span><span class="fa fa-chevron-down"></span>
+                </a>
+                <ul class="nav child_menu">
+                    <li class=" ">
+                        <a href="http://localhost/projects/future/index.php?admin/examquestion">
+                            <span> Manage Exam Questions</span>
+                        </a>
+                    </li>
+                    <li class=" ">
+                        <a href="http://localhost/projects/future/index.php?admin/exam">
+                            <span> exam list</span>
+                        </a>
+                    </li>
+                    <li class=" ">
+                        <a href="http://localhost/projects/future/index.php?admin/grade">
+                            <span> Exam Grades</span>
+                        </a>
+                    </li>
+                    <li class=" ">
+                        <a href="http://localhost/projects/future/index.php?admin/marks">
+                            <span> manage marks</span>
+                        </a>
+                    </li>
+                    <li class=" ">
+                        <a href="http://localhost/projects/future/index.php?admin/exam_marks_sms">
+                            <span> Send Marks By Sms</span>
+                        </a>
+                    </li>
+                    <li class=" ">
+                        <a href="http://localhost/projects/future/index.php?admin/tabulation_sheet">
+                            <span> Tabulation Sheet</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- AASIGNMENTS -->
+            <li class="root-level">
+                <a href="http://localhost/projects/future/index.php?admin/assignment">
+                    <i class="entypo-book"></i>
+                    <span>Assignments</span>
+                </a>
+            </li>
+            <!-- PAYMENT -->
+            <!-- <li class=" ">
+                <a href="index.php?admin/invoice">
+                    <i class="entypo-credit-card"></i>
+                    <span></span>
+                </a>
+            </li> -->
+
+            <!-- ACCOUNTING -->
+            <li class="root-level has-sub">
+                <a href="#">
+                    <i class="entypo-suitcase"></i>
+                    <span>Accounting</span><span class="fa fa-chevron-down"></span>
+                </a>
+                <ul class="nav child_menu">
+                    <li class=" ">
+                        <a href="http://localhost/projects/future/index.php?admin/student_payment">
+                            <span> Create Student Payment</span>
+                        </a>
+                    </li>
+                    <li class=" ">
+                        <a href="http://localhost/projects/future/index.php?admin/income">
+                            <span> Student Payments</span>
+                        </a>
+                    </li>
+                    <li class=" ">
+                        <a href="http://localhost/projects/future/index.php?admin/expense">
+                            <span> Expense</span>
+                        </a>
+                    </li>
+                    <li class=" ">
+                        <a href="http://localhost/projects/future/index.php?admin/expense_category">
+                            <span> Expense Category</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- LIBRARY -->
+            <li class="root-level">
+                <a href="http://localhost/projects/future/index.php?admin/book">
+                    <i class="entypo-book"></i>
+                    <span>Libraries</span>
+                </a>
+            </li>
+
+            <!-- TRANSPORT -->
+            <li class="root-level">
+                <a href="http://localhost/projects/future/index.php?admin/transport">
+                    <i class="entypo-location"></i>
+                    <span>Transports</span>
+                </a>
+            </li>
+
+            <!-- DORMITORY -->
+            <li class="root-level">
+                <a href="http://localhost/projects/future/index.php?admin/dormitory">
+                    <i class="entypo-home"></i>
+                    <span>Dormitories</span>
+                </a>
+            </li>
+
+            <!-- NOTICEBOARD -->
+            <li class="root-level">
+                <a href="http://localhost/projects/future/index.php?admin/noticeboard">
+                    <i class="entypo-doc-text-inv"></i>
+                    <span>Noticeboards</span>
+                </a>
+            </li>
+
+
+            <!-- HOLIDAYS -->
+            <li class="root-level">
+                <a href="http://localhost/projects/future/index.php?admin/holiday">
+                    <i class="entypo-target"></i>
+                    <span>Manage Holiday</span>
+                </a>
+            </li>
+
+            <!-- TODAYS THOUGHT -->
+            <li class="root-level">
+                <a href="http://localhost/projects/future/index.php?admin/todays_thought">
+                    <i class="fa fa-book"></i>
+                    <span>Manage Thoughts</span>
+                </a>
+            </li>
+
+            <!-- MESSAGE -->
+            <li class="root-level">
+                <a href="http://localhost/projects/future/index.php?admin/message">
+                    <i class="entypo-mail"></i>
+                    <span>Messages</span>
+                </a>
+            </li>
+
+            <!-- SETTINGS -->
+            <li class="root-level has-sub">
+                <a href="#">
+                    <i class="fa fa-gear"></i>
+                    <span>system settings</span><span class="fa fa-chevron-down"></span>
+                </a>
+                <ul class="nav child_menu">
+                    <li class=" ">
+                        <a href="http://localhost/projects/future/index.php?admin/system_settings">
+                            <span> General Settings</span>
+                        </a>
+                    </li>
+                    <li class=" ">
+                        <a href="http://localhost/projects/future/index.php?admin/sms_settings">
+                            <span> Sms Settings</span>
+                        </a>
+                    </li>
+                    <li class=" ">
+                        <a href="http://localhost/projects/future/index.php?admin/manage_language">
+                            <span> Language Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+
+
+
+            <!-- LOAN PAGE -->
+            <li class="root-level has-sub">
+                <a href="#">
+                    <i class="entypo-flow-tree"></i>
+                    <span>Front End Settings</span><span class="fa fa-chevron-down"></span>
+                </a>
+                <ul class="nav child_menu">
+                    <li class=" ">
+                        <a href="http://localhost/projects/future/index.php?admin/banar">
+                            <span> Manage Banners</span>
+                        </a>
+                    </li>
+
+                    <li class=" ">
+                        <a href="http://localhost/projects/future/index.php?admin/front_end">
+                            <span> System Information</span>
+                        </a>
+                    </li>
+
+                    <li class=" ">
+                        <a href="http://localhost/projects/future/index.php?admin/news">
+                            <span> News Settings</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+
+
+
+
+            <!-- HELP LINKS -->
+            <li class="root-level">
+                <a href="http://localhost/projects/future/index.php?admin/help_link">
+                    <i class="fa fa-book"></i>
+                    <span>Manage Help Link</span>
+                </a>
+            </li>
+
+            <!-- HELP DESK -->
+            <li class="root-level">
+                <a href="http://localhost/projects/future/index.php?admin/help_desk">
+                    <i class="entypo-users"></i>
+                    <span>Manage Help Desks</span>
+                </a>
+            </li>
+
+            <!-- ACCOUNT -->
+            <li class="root-level">
+                <a href="http://localhost/projects/future/index.php?admin/manage_profile">
+                    <i class="entypo-lock"></i>
+                    <span>Manage Account</span>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+</div>
+<!--<div class="sidebar-footer hidden-small">
+    <a data-toggle="tooltip" data-placement="top" title="Settings">
+        <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+    </a>
+    <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+        <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+    </a>
+    <a data-toggle="tooltip" data-placement="top" title="Lock">
+        <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+    </a>
+    <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
+        <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+    </a>
+</div>-->
+<!-- /menu footer buttons -->
+                    </div>
