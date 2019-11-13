@@ -1,36 +1,10 @@
-Please open phpmyadmin, click school and then click sql on the top bar,
-copy and paste the following text into the textbox.
-
-
-
-
-
-
-
-
-
-truncate table eResults;
-truncate table catTotals;
-truncate table examTotals;
-truncate table averageResults;
-truncate table averageTotals;
-truncate table isAvPosted;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-click go and then check if the system is Okay.
-This solves the problem
+printCat
+resultsSub 
+printAverage
+resultsCat
+DAtabase
+resultsClass
+Post
+ManageResults
+editresults
+viewResults

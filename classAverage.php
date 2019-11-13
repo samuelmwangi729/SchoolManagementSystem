@@ -42,9 +42,9 @@ if(isset($_POST['sub'])){
 						<?php
 						if(isset($_GET['Trun'])){
 							$db=new Database();
-							$db->query('TRUNCATE TABLE eResults');
+							$db->query('TRUNCATE TABLE eresults');
 							$db->execute();
-							$db->query('TRUNCATE TABLE averageTotals');
+							$db->query('TRUNCATE TABLE averagetotals');
 							$db->execute();
 						}
 						if(isset($_GET['Num'])){
@@ -156,23 +156,20 @@ if(isset($_POST['sub'])){
     							<tr>
                      <td style="font-size:8px;font-family:courier">S/N</td>
                      	<td style="font-size:8px;font-family:courier">Names</td>
-                    <?php  $db=new Database();
-                    $c1=$db->checkCat('CAT 1',$_SESSION['term'],$_SESSION['year']);
-                    $c2=$db->checkCat('CAT 2',$_SESSION['term'],$_SESSION['year']);
-                    ?>
-
-
-										<?php
-										$db=new Database();
-										$subjects=$db->displayTable('subject');
-										foreach ($subjects as $key ) {
-											echo "<td style='font-size:8px;font-family:courier'>".$key->subjectAbbr."</td>";
-										}
-										?>
-										<td style="font-size:8px;font-family:courier">Total</td>
-										<td style="font-size:8px;font-family:courier">Grade</td>
-										<td style="font-size:8px;font-family:courier">Sujbects</td>
-										<td style="font-size:8px;font-family:courier">Position</td>
+					<?php  
+					$db=new Database();
+                    $c1=$db->checkCat('CAT 1',$_SESSION['class'],$_SESSION['term'],$_SESSION['year']);
+                    $c2=$db->checkCat('CAT 2',$_SESSION['class'],$_SESSION['term'],$_SESSION['year']);
+					$db=new Database();
+					$subjects=$db->displayTable('subject');
+					foreach ($subjects as $key ) {
+						echo "<td style='font-size:8px;font-family:courier'>".$key->subjectAbbr."</td>";
+					}
+					?>
+					<td style="font-size:8px;font-family:courier">Total</td>
+					<td style="font-size:8px;font-family:courier">Grade</td>
+					<td style="font-size:8px;font-family:courier">Sujbects</td>
+					<td style="font-size:8px;font-family:courier">Position</td>
     							</tr>
     						</thead>
     						<tbody>
@@ -332,9 +329,13 @@ if(isset($_POST['sub'])){
 											}
 											 ?></td>
 											 <td style="font-family:courier;font-size:8px"><?php echo $count;?></td>
-											 <td style="font-family:courier;font-size:8px"><?php
-													echo $db->getAveragePosition($key1->regNo,$_SESSION['exam'],$_SESSION['class'],$term,$_SESSION['year'])
-											 ?></td>
+											 <?php 
+											  $AveragePosition= $db->getAveragePosition($key1->regNo,$_SESSION['exam'],$_SESSION['class'],$term,$_SESSION['year']);
+											 if($AveragePosition ==1 || $AveragePosition ==2 || $AveragePosition ==3){
+												echo "<td style='font-size:12px;font-weight:bold;'><span style='color:red'>".$AveragePosition."</span></td>";
+											  }else{
+												echo "<td style='font-family:courier;font-size:8px'>".$AveragePosition."</td>";
+											  } ?>
 										</tr>
 								<?php } }}
 								if($_SESSION['exam'] == "" || $_SESSION['class']==""){
