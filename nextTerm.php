@@ -2,7 +2,7 @@
 session_start();
 require_once('Database.php');
 $database=new Database();
-$database->query("SELECT term FROM nextSession");
+$database->query("SELECT term FROM nextsession");
 $database->execute();
 $_SESSION['nterm']=$database->fetchColumn();
 if(isset($_SESSION['role'])){
@@ -16,7 +16,7 @@ if(isset($_SESSION['role'])){
 	$amount=$_POST['amount'];
 		//insert into the database
 		$db=new Database();
-		$db->query("INSERT INTO nextTermFees(votehead,term,class,amount,year) VALUES(:votehead,:term,:class,:amount,:year)");
+		$db->query("INSERT INTO nexttermfees(votehead,term,class,amount,year) VALUES(:votehead,:term,:class,:amount,:year)");
 		$db->bind(':votehead',$voteHead);
 		$db->bind(':term',$term);
 		$db->bind(':class',$class);
@@ -64,7 +64,7 @@ if(isset($_GET['Delete'])){
 if(isset($_POST['upd'])){
 	$term=$_POST['term'];
 	$db=new Database();
-	$db->query("UPDATE nextSession SET term=:currentSession WHERE id=1");
+	$db->query("UPDATE nextsession SET term=:currentSession WHERE id=1");
 	$db->bind(':currentSession',$term);
 	if($db->execute()){
 		$Msg="<div class='alert alert-success'id='alert'>
@@ -83,7 +83,7 @@ if(isset($_POST['upd'])){
 							<?php echo $Msg;?>
 							<fieldset>
 								<legend style="border:0px;font-size:30px;"><strong>Set School Fees for Term <?php $database=new Database();
-								$database->query("SELECT term FROM nextSession");
+								$database->query("SELECT term FROM nextsession");
 								$database->execute();
 								echo $database->fetchColumn();
 									?></strong></legend>
@@ -93,7 +93,7 @@ if(isset($_POST['upd'])){
 										<select name="voteHead" class="form-control">
 											<option>--SELECT VOTEHEAD--</option>
 											<?php $database=new Database();
-											$results=$database->displayApproved('voteHead');
+											$results=$database->displayApproved('votehead');
 											foreach ($results as $key) {
 											?>
 											<option><?php echo $key->voteHead;?></option>
@@ -103,7 +103,7 @@ if(isset($_POST['upd'])){
 									<div class="col-sm-3">
 										<label for="term" class="label-control">TERM</label>
 										<input type="text" name="term" class="form-control" value="<?php $database=new Database();
-										$database->query("SELECT term FROM nextSession");
+										$database->query("SELECT term FROM nextsession");
 										$database->execute();
 										echo $database->fetchColumn();
 											?>" readonly/>
@@ -154,7 +154,7 @@ if(isset($_POST['upd'])){
 	                <thead class="text-center">
 	                  <tr>
 	                    <td colspan="4">FORM 1 Term <?php $database=new Database();
-											$database->query("SELECT term FROM nextSession");
+											$database->query("SELECT term FROM nextsession");
 											$database->execute();
 											$CurrentTerm=$database->fetchColumn();
 											echo $CurrentTerm;
@@ -169,7 +169,7 @@ if(isset($_POST['upd'])){
 	                <tbody>
 	                  <?php
 										$database=new Database();
-										$database->query("SELECT term FROM nextSession");
+										$database->query("SELECT term FROM nextsession");
 										$database->execute();
 										$term=$database->fetchColumn();
 	                  $results=$database->displaynTFees(1,$term);
@@ -201,7 +201,7 @@ if(isset($_POST['upd'])){
 	                <thead class="text-center">
 	                  <tr>
 	                    <td colspan="4">FORM 2 Term <?php $database=new Database();
-											$database->query("SELECT term FROM nextSession");
+											$database->query("SELECT term FROM nextsession");
 											$database->execute();
 											echo $database->fetchColumn();
 												?> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Printn.php?Print=2&Term=<?php echo $CurrentTerm;?>" class="fa fa-print badge badge-success text-right" style="margin-left:200px">Print Fees Structure</a></td>
@@ -215,7 +215,7 @@ if(isset($_POST['upd'])){
 	                <tbody>
 	                  <?php
 										$database=new Database();
-										$database->query("SELECT term FROM nextSession");
+										$database->query("SELECT term FROM nextsession");
 										$database->execute();
 										$term=$database->fetchColumn();
 	                  $results=$database->displaynTFees(2,$term);
@@ -249,7 +249,7 @@ if(isset($_POST['upd'])){
 	                <thead class="text-center">
 	                  <tr>
 	                    <td colspan="4">FORM 3 Term <?php $database=new Database();
-											$database->query("SELECT term FROM nextSession");
+											$database->query("SELECT term FROM nextsession");
 											$database->execute();
 											echo $database->fetchColumn();
 												?> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Printn.php?Print=3&Term=<?php echo $CurrentTerm;?>" class="fa fa-print badge badge-success text-right" style="margin-left:200px">Print Fees Structure</a></td>
@@ -263,7 +263,7 @@ if(isset($_POST['upd'])){
 	                <tbody>
 	                  <?php
 										$database=new Database();
-										$database->query("SELECT term FROM nextSession");
+										$database->query("SELECT term FROM nextsession");
 										$database->execute();
 										$term=$database->fetchColumn();
 	                  $results=$database->displaynTFees(3,$term);
@@ -295,7 +295,7 @@ if(isset($_POST['upd'])){
 	                <thead class="text-center">
 	                  <tr>
 	                    <td colspan="4">FORM 4 Term <?php $database=new Database();
-											$database->query("SELECT term FROM nextSession");
+											$database->query("SELECT term FROM nextsession");
 											$database->execute();
 											$CurrentTerm=$database->fetchColumn();
 											echo $CurrentTerm;
@@ -310,7 +310,7 @@ if(isset($_POST['upd'])){
 	                <tbody>
 	                  <?php
 										$database=new Database();
-										$database->query("SELECT term FROM nextSession");
+										$database->query("SELECT term FROM nextsession");
 										$database->execute();
 										$term=$database->fetchColumn();
 	                  $results=$database->displaynTFees(4,$term);

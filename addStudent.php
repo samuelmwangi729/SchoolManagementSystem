@@ -63,7 +63,7 @@ if(isset($_POST['sub'])){
 		</div>";
 	}
 	//get the current term
-	$db->query("SELECT currentSession FROM currentSession");
+	$db->query("SELECT currentSession FROM currentsession");
 	$db->execute();
 	$term=$db->fetchColumn();
 	//invoice the student

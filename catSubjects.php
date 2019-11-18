@@ -7,7 +7,7 @@ if(isset($_SESSION['role'])){
 	if(isset($_POST['sub'])){
 		//handle the button event
 		$catName=$_POST['catName'];
-		$tableName="catSubject";
+		$tableName="catsubject";
 		$field="catName";
 		//insert into the database
 		$db=new Database();
