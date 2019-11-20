@@ -57,7 +57,7 @@ if(isset($_POST['sub'])){
 						}
 						if(isset($_GET['Num'])){
 							$db1=new Database();
-							if($_SESSION['class']==3 || $_SESSION	['class']==4){
+							if($_GET['Class']==3 || $_GET['Class']==4){
 								$db1->query('SELECT *  FROM examtotals where  exam=:exam AND Class=:class AND term=:term AND year=:Year ORDER BY points DESC');
 								$db1->bind(':exam',$_GET['Num']);
 								$db1->bind(':class',$_GET['Class']);
@@ -193,7 +193,7 @@ if(isset($_POST['sub'])){
 											<strong>No Details Selected!!Please Fill the Above form</strong>
 										</div>";
 									}else{
-										$database->query("SELECT * FROM student  WHERE class=:class AND status=:status  ORDER BY id ASC");
+										$database->query("SELECT * FROM student  WHERE class=:class AND status=:status ");
 										$database->bind(':class',$_SESSION['class']);
 										$database->bind(':status',1);
 								  $results=$database->resultSet();
@@ -308,7 +308,12 @@ if(isset($_POST['sub'])){
 											 ?></td>
 											 <td style="font-family:courier;font-size:8px"><?php echo $count;?></td>
 											 <td style="font-family:courier;font-size:8px"><?php
-													echo $db->getPosition($key1->regNo,$_SESSION['exam'],$_SESSION['class'],$term,$_SESSION['year'])
+													$positionc=$db->getPosition($key1->regNo,$_SESSION['exam'],$_SESSION['class'],$term,$_SESSION['year']);
+													if($positionc <=5){
+														echo "<span style='color:red;font-weight:bold;font-size:20px'>".$positionc."</span>";
+													}else{
+														echo $positionc;
+													}
 											 ?></td>
 										</tr>
 								<?php } }}
